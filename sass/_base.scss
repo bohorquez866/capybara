@@ -1,0 +1,74 @@
+$primary-font: 'Lato',
+sans-serif;
+$secondary-font: 'Fredoka One',
+cursive;
+$white: #fff;
+$black: #000;
+$purple: #BD58FF;
+$purple-2: #360060;
+$purple-title: #8D08E2;
+$dark-purple: #360060;
+$soft-pink: #E0AFFF;
+$green: #1EE373;
+$grey: #555;
+$grey-2: #333;
+$body-bg: #4dc7ff2c;
+$grey-purple: #5d5c6d;
+//breakpoint
+$bpLarge: 106.25em;
+$bpBig: 81.25em;
+$bpMedium: 60em;
+$bpSmall: 30em;
+//
+@mixin mq-min($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content
+    }
+}
+
+@mixin mq($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+::selection {
+    background-color: rgba(95, 107, 218, 0.4);
+    color: $white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: $primary-font;
+    scroll-behavior: smooth;
+    @include mq-min($bpLarge) {
+        font-size: 80%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}

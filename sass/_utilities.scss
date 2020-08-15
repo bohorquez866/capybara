@@ -1,0 +1,146 @@
+.d-flex {
+    display: flex;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.transition-3 {
+    transition: all .3s ease-in;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.grid-center {
+    @extend .d-grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 2rem;
+    @include mq($bpMedium) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.center-picture {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-long {
+    grid-column: 1/-1;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-margin {
+    margin: auto;
+}
+
+.grid-w-100 {
+    grid-column: 1/-1;
+}
+
+.b-radius-1 {
+    border-radius: 1rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 5rem;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    @extend.center-text;
+    @extend .transition-3;
+    &:active {
+        transform: translateY(.1rem);
+    }
+    &--transparent {
+        outline: none;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+    }
+    &--cta {
+        width: 45%;
+        font-size: 3rem;
+        color: $green;
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+        &:hover {
+            color: $purple;
+        }
+    }
+    @include mq($bpMedium) {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        display: block;
+        width: 80%;
+        max-width: 80%;
+        padding: 2rem;
+    }
+}
+
+.accordion {
+    &-header {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        // plus symbol
+        &::after {
+            content: '\002B';
+            font-size: 3rem;
+            position: absolute;
+            right: 0;
+            //active status on clik
+        }
+        &.active::after {
+            content: '\2212';
+        }
+        @include mq($bpSmall) {
+            display: grid;
+            &::after {
+                content: '\002B';
+                font-size: 4rem;
+                right: 0;
+                top: -1rem;
+                //active status on clik
+            }
+        }
+    }
+    &-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in;
+    }
+}
+
+.grid-parent {
+    display: grid;
+    &__2x1fr {
+        grid-template-columns: 1fr;
+    }
+    &__2x1fr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__3x1fr {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__4x1fr {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

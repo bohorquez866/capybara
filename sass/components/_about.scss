@@ -1,0 +1,17 @@
+.about {
+    margin-top: 20rem;
+    &__content {
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.bg-curve {
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    object-fit: initial;
+}

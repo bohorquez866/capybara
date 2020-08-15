@@ -1,0 +1,24 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &__list {
+        grid-column: 8/13;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2.5rem;
+        color: $white;
+    }
+    &__link {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 1rem;
+        transition: all .3s ease-in;
+        &:hover {
+            border-bottom: 2px solid $dark-purple;
+        }
+    }
+}
+
+.logo {
+    grid-column: 1/span 3;
+    width: 20rem;
+}
