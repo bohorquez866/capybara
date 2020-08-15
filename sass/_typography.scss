@@ -22,6 +22,13 @@ h1 {
     margin: 2rem 0;
 }
 
+.purple-subtitle {
+    color: $purple-title;
+    font-size: 4rem;
+    display: block;
+    letter-spacing: 1px;
+}
+
 .purple-strong-title {
     font-family: $secondary-font;
     color: $purple-title;
@@ -29,6 +36,14 @@ h1 {
     display: block;
     font-size: 3.6rem;
     margin-top: 1rem;
+}
+
+.green-title {
+    font-size: 5rem;
+    color: $green;
+    @extend .center-text;
+    margin: 2rem 0;
+    height: 12rem;
 }
 
 .text {

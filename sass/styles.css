@@ -106,7 +106,7 @@ textarea {
   grid-column: 1/-1;
 }
 
-.center-text, .btn, .section-title {
+.center-text, .btn, .section-title, .green-title {
   text-align: center;
 }
 
@@ -259,6 +259,13 @@ h1 {
   margin: 2rem 0;
 }
 
+.purple-subtitle {
+  color: #8D08E2;
+  font-size: 4rem;
+  display: block;
+  letter-spacing: 1px;
+}
+
 .purple-strong-title {
   font-family: "Fredoka One", cursive;
   color: #8D08E2;
@@ -266,6 +273,13 @@ h1 {
   display: block;
   font-size: 3.6rem;
   margin-top: 1rem;
+}
+
+.green-title {
+  font-size: 5rem;
+  color: #1EE373;
+  margin: 2rem 0;
+  height: 12rem;
 }
 
 .text {
@@ -420,30 +434,6 @@ h1 {
       justify-self: end;
 }
 
-.about {
-  margin-top: 20rem;
-}
-
-.about__content {
-  position: relative;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-}
-
-.bg-curve {
-  z-index: -100;
-  position: absolute;
-  height: 100%;
-  -o-object-fit: initial;
-     object-fit: initial;
-}
-
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,5 +517,53 @@ h1 {
 
 .gallery__item-5 {
   background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80");
+}
+
+.about {
+  margin-top: 20rem;
+}
+
+.about__content {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.bg-curve {
+  z-index: -100;
+  position: absolute;
+  height: 100%;
+  -o-object-fit: initial;
+     object-fit: initial;
+}
+
+.services {
+  margin-top: 20rem;
+}
+
+.cards {
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  padding: 3rem;
+}
+
+.card__item {
+  background-color: #8D08E2;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 5rem;
+}
+
+.card__text {
+  font-size: 2.6rem;
+  margin: 0 auto;
+  display: block;
+  text-align: justify;
 }
 /*# sourceMappingURL=styles.css.map */
