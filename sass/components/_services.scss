@@ -1,5 +1,18 @@
 .services {
     margin-top: 20rem;
+    &__description {
+        font-size: 3rem;
+        color: $soft-pink-2;
+        margin: auto;
+        display: block;
+        text-align: justify;
+        ;
+        width: 70%;
+        &:not(:last-of-type) {
+            margin-bottom: 3rem;
+            margin-top: 8rem;
+        }
+    }
 }
 
 .cards {
@@ -19,5 +32,6 @@
         margin: 0 auto;
         display: block;
         text-align: justify;
+        width: 80%;
     }
 }

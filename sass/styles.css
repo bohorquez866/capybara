@@ -106,7 +106,7 @@ textarea {
   grid-column: 1/-1;
 }
 
-.center-text, .btn, .section-title, .green-title {
+.center-text, .btn, .section-title, .green-title, .dark-title, .footer {
   text-align: center;
 }
 
@@ -129,7 +129,7 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   border-radius: 5rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
   cursor: pointer;
   font-size: 2rem;
   font-weight: 700;
@@ -150,7 +150,7 @@ textarea {
 }
 
 .btn--cta {
-  width: 45%;
+  width: 25rem;
   font-size: 3rem;
   color: #1EE373;
   -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
@@ -159,6 +159,12 @@ textarea {
 
 .btn--cta:hover {
   color: #BD58FF;
+}
+
+.btn--right {
+  position: absolute;
+  right: 0;
+  bottom: -8rem;
 }
 
 @media only screen and (max-width: 60em) {
@@ -282,6 +288,21 @@ h1 {
   height: 12rem;
 }
 
+.dark-title {
+  font-size: 3.6rem;
+  color: #360060;
+  display: block;
+  margin: 5rem 0;
+  background-color: #e6e6e6;
+}
+
+.white-title {
+  color: #fff;
+  font-size: 6.4rem;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+}
+
 .text {
   color: #fff;
   font-size: 3rem;
@@ -356,6 +377,12 @@ h1 {
   grid-row: 3/4;
 }
 
+.ilustration-1-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
 .ilustration-2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -363,6 +390,12 @@ h1 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+.ilustration-2-1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .whatsapp-bot {
@@ -547,6 +580,20 @@ h1 {
   margin-top: 20rem;
 }
 
+.services__description {
+  font-size: 3rem;
+  color: #A559E5;
+  margin: auto;
+  display: block;
+  text-align: justify;
+  width: 70%;
+}
+
+.services__description:not(:last-of-type) {
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+}
+
 .cards {
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
@@ -565,5 +612,114 @@ h1 {
   margin: 0 auto;
   display: block;
   text-align: justify;
+  width: 80%;
+}
+
+.contact {
+  background: url(../../assets/bg.svg) center bottom no-repeat;
+  background-size: cover;
+  padding: 0 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15rem;
+  height: 80vh;
+}
+
+.contact__form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.contact__input {
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #8927DC;
+}
+
+.contact__input-name, .contact__input-number {
+  width: 48%;
+}
+
+.contact__input-comment {
+  height: 15rem;
+}
+
+.contact__input-wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin: 5rem auto;
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #8D08E2;
+  border-top: 3px solid #8D08E2;
+  border-bottom: 3px solid #8D08E2;
+}
+
+.contact__info span {
+  margin-left: 2rem;
+}
+
+.contact__link {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact__link:hover {
+  color: #1EE373;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.contact__social-item {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-bottom: 4px solid transparent;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.contact__social-item:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.contact__social-item:hover {
+  border-bottom: 4px solid #8927DC;
+}
+
+.footer {
+  color: #8D08E2;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

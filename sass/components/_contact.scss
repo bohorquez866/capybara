@@ -1,0 +1,79 @@
+.contact {
+    background: url(../../assets/bg.svg) center bottom no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+    align-items: center;
+    padding-bottom: 15rem;
+    height: 80vh;
+    &__form {
+        flex-direction: column;
+        position: relative;
+    }
+    &__input {
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+        font-family: inherit;
+        color: $purple-3;
+        &-name,
+        &-number {
+            width: 48%;
+        }
+        &-comment {
+            height: 15rem;
+        }
+    }
+    &__input-wrapper {
+        justify-content: space-between;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 5rem auto;
+        padding: 1rem 0;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: $purple-title;
+        border-top: 3px solid $purple-title;
+        border-bottom: 3px solid $purple-title;
+        span {
+            margin-left: 2rem;
+        }
+    }
+    &__link {
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $green;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        &-item {
+            transition: all .3s ease;
+            border-bottom: 4px solid transparent;
+            border-radius: 1rem;
+            padding: .5rem;
+            &:not(:last-of-type) {
+                margin-right: 3rem;
+            }
+            &:hover {
+                border-bottom: 4px solid $purple-3;
+            }
+        }
+    }
+}
+
+.footer {
+    @extend .center-text;
+    color: $purple-title;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}

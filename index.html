@@ -15,8 +15,9 @@
             <img src="./assets/logo.svg" class="logo" alt="logo de Capybara Technologies">
 
             <ul class="navbar__list d-flex">
-                <li class="navbar__item"><a href="#about" class="navbar__link">Acerca de Nosotros</a></li>
-                <li class="navbar__item"><a href="#formation" class="navbar__link">Formación</a></li>
+
+                <li class="navbar__item"><a href="#projects" class="navbar__link">Proyectos</a></li>
+                <li class="navbar__item"><a href="#about" class="navbar__link">Nosotros</a></li>
                 <li class="navbar__item"><a href="#services" class="navbar__link">Servicios</a></li>
                 <li class="navbar__item"><a href="#contact" class="navbar__link">Contacto</a></li>
             </ul>
@@ -37,7 +38,7 @@
     </header>
 
     <main class="main">
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="section-title">Proyectos</h2>
 
             <div class="gallery">
@@ -51,7 +52,7 @@
         </section>
 
         <section class="about">
-            <h2 class="section-title  grid-long">Acerca de Nosotros</h2>
+            <h2 class="section-title  grid-long" id="about">Nosotros</h2>
             <article class="about__content grid-parent grid-parent__2x1fr">
                 <img src="./assets/curved-bg.svg" alt="bg" class="bg-curve">
 
@@ -65,7 +66,7 @@
             </article>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="section-title  grid-long">Servicios</h2>
             <strong class="purple-subtitle center-text">Todas nuestras paginas cuentan con con los siguientes servicios</strong>
 
@@ -85,12 +86,51 @@
                     <p class="card__text">No solo te aseguramos una pagina con las ultimas tecnologías u optimizada, si no que te daremos un branding junto a textos atractivos que te harán resaltar de la competencia.</p>
                 </li>
             </ul>
+
+            <p class="services__description">Ademas de estas caracteristcas con nuestro sistemas de complementos podrás agregar diversas funcionalidades utiles a tu landing page cómo: mapas, fichas de contacto y mucho más.</p>
+
+            <p class="services__description">Si tuvieras otra necesidad también tenemos componentes ondemand, para asegurarte que tendrás todo lo que necesites para despegar.</p>
         </section>
 
+        <strong class="dark-title">Tu proximo negocio a un email de distancia</strong>
+
+        <section class="contact grid-parent grid-parent__2x1fr" id="contact">
+            <form class="contact__form d-flex">
+                <h2 class="white-title">Contacto</h2>
+
+                <div class="contact__input-wrapper d-flex">
+                    <input type="text" class="contact__input contact__input-name" placeholder="Nombre" required>
+                    <input type="number" class="contact__input contact__input-number" placeholder="Numero de telefono" required>
+                </div>
+
+                <input type="email" class="contact__input contact__input-email" placeholder="Email" required>
+                <textarea class="contact__input contact__input-comment" placeholder="Hablemos de tu emprendimiento"></textarea>
+                <input type="submit" class="btn btn--cta btn--right" value="Enviar">
+
+            </form>
+
+            <img src="./assets/ilustracion.png" class="ilustration ilustration-2-1  " alt="ilustracion de capibara">
+
+
+        </section>
+        <!-- LINks for contact -->
+        <div class="contact__info">
+            <a href="mailto:hola@capybaratech.com" class="contact__link">hola@capybaratech.com</a>
+            <a href="tel:0000" class="contact__link">BOGOTA <span>+00 000 00 0000</span></a>
+            <a href="tel:0000" class="contact__link">LIMA <span>+00 000 00 0000</span></a>
+        </div>
+        <!-- Social media icons -->
+        <figure class="contact__social">
+            <a href="#" class="contact__social-item"><img src="./assets/fb.svg" alt="facebook" class="social-icon"></a>
+            <a href="#" class="contact__social-item"><img src="./assets/twitter.svg" alt="twitter" class="social-icon"></a>
+            <a href="#" class="contact__social-item"><img src="./assets/ig.svg" alt="instagram" class="social-icon"></a>
+        </figure>
     </main>
     <!-- Whatssapp floating bot -->
-    <img src="./assets/ws.svg" class="whatsapp-bot" alt="icono de whatsapp">
+    <img src="./assets/ws.svg " class="whatsapp-bot " alt="icono de whatsapp ">
 </body>
-<script src=""></script>
+
+<footer class="footer">CAPYBARA TECHNOLOGIES 2020</footer>
+
 
 </html>
