@@ -129,7 +129,7 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   border-radius: 5rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
   cursor: pointer;
   font-size: 2rem;
   font-weight: 700;
@@ -153,6 +153,7 @@ textarea {
   width: 25rem;
   font-size: 3rem;
   color: #1EE373;
+  font-family: "Fredoka One", cursive;
   -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
 }
@@ -162,8 +163,11 @@ textarea {
 }
 
 .btn--right {
+  padding: .5rem 1rem;
+  font-size: 4rem;
   position: absolute;
   right: 0;
+  font-family: "Fredoka One", cursive;
   bottom: -8rem;
 }
 
@@ -259,15 +263,16 @@ h1 {
 }
 
 .section-title {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: "Fredoka One", cursive;
   color: #8D08E2;
   margin: 2rem 0;
+  font-weight: normal;
 }
 
 .purple-subtitle {
   color: #8D08E2;
-  font-size: 4rem;
+  font-size: 3rem;
   display: block;
   letter-spacing: 1px;
 }
@@ -282,7 +287,7 @@ h1 {
 }
 
 .green-title {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: #1EE373;
   margin: 2rem 0;
   height: 12rem;
@@ -305,7 +310,7 @@ h1 {
 
 .text {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.6rem;
   width: 60rem;
   text-align: justify;
 }
@@ -366,6 +371,8 @@ h1 {
 
 .ilustration {
   width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .ilustration-1 {
@@ -418,6 +425,7 @@ h1 {
 }
 
 .navbar {
+  padding-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -581,7 +589,7 @@ h1 {
 }
 
 .services__description {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #A559E5;
   margin: auto;
   display: block;
@@ -608,7 +616,7 @@ h1 {
 }
 
 .card__text {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   margin: 0 auto;
   display: block;
   text-align: justify;
@@ -639,7 +647,7 @@ h1 {
   outline: none;
   border: none;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 2.2rem;
   font-weight: 700;
   font-family: inherit;
