@@ -163,7 +163,7 @@ textarea {
 }
 
 .btn--right {
-  padding: .5rem 2rem;
+  padding: .5rem 4rem;
   font-size: 4rem;
   position: absolute;
   right: 0;
@@ -230,6 +230,12 @@ textarea {
   .grid-parent {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+  }
+}
+
+@media only screen and (min-width: 81.25em) {
+  .grid-parent {
+    padding: 0 10%;
   }
 }
 
@@ -314,6 +320,7 @@ h1 {
   font-size: 6.4rem;
   font-family: "Fredoka One", cursive;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .text {
@@ -638,7 +645,7 @@ h1 {
 
 .services__description:not(:last-of-type) {
   margin-bottom: 3rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .cards {
@@ -652,6 +659,7 @@ h1 {
   color: #fff;
   padding: 2rem;
   border-radius: 5rem;
+  max-width: 35rem;
 }
 
 .card__text {
@@ -714,11 +722,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 75%;
-  margin: 5rem auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5rem auto 3rem auto;
   padding: 1rem 0;
   font-size: 2.3rem;
   font-weight: bold;
@@ -747,7 +753,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .contact__social-item {

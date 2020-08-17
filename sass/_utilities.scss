@@ -88,7 +88,7 @@
         }
     }
     &--right {
-        padding: .5rem 2rem;
+        padding: .5rem 4rem;
         font-size: 4rem;
         position: absolute;
         right: 0;
@@ -143,6 +143,9 @@
     display: grid;
     @include mq($bpMedium) {
         grid-template-columns: 1fr!important;
+    }
+    @include mq-min($bpBig) {
+        padding: 0 10%;
     }
     &__2x1fr {
         grid-template-columns: 1fr;
