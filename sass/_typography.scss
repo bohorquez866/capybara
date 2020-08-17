@@ -4,6 +4,7 @@
         font-family: $secondary-font;
         letter-spacing: 2px;
         margin-bottom: 2rem;
+        text-transform: uppercase;
     }
     
     .main-description {
@@ -51,7 +52,7 @@
         font-size: 3.6rem;
         color: $dark-purple;
         display: block;
-        margin: 5rem 0;
+        margin: 2.5rem 0;
         @extend .center-text;
         background-color: rgb(230, 230, 230);
     }

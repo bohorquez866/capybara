@@ -12,12 +12,18 @@
         justify-items: center;
     }
     &__text-content {
-        width: 51.5rem;
+        width: 62rem;
+        @include mq($bpMedium) {
+            width: auto;
+        }
     }
     &__btns {
         display: flex;
         justify-content: space-between;
         margin-top: 5rem;
+        @include mq($bpMedium) {
+            flex-direction: column;
+        }
     }
 }
 
