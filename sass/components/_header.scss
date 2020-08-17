@@ -19,7 +19,7 @@
     }
     &__btns {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 5rem;
         @include mq($bpMedium) {
             flex-direction: column;
@@ -28,8 +28,8 @@
 }
 
 .ilustration {
-    width: 70%;
     justify-self: center;
+    width: 70%;
     &-1 {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -44,6 +44,14 @@
     &-2-1 {
         grid-column: 2/3;
     }
+}
+
+.just-right {
+    justify-self: end;
+}
+
+.just-left {
+    justify-self: start;
 }
 
 .whatsapp-bot {
