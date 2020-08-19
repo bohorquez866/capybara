@@ -20,7 +20,7 @@
         font-family: $secondary-font;
         @extend .center-text;
         color: $purple-title;
-        margin: 2rem 0;
+        margin: 0 0 4rem 0;
         font-weight: normal;
     }
     
@@ -43,6 +43,7 @@
     .green-title {
         font-size: 3.5rem;
         color: $green;
+        text-transform: uppercase;
         @extend .center-text;
         margin: 2rem 0;
         height: 12rem;

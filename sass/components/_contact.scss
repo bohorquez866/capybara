@@ -1,9 +1,8 @@
 .contact {
-    background: url(../../assets/bg.svg) center bottom no-repeat;
-    background-size: cover;
     padding: 0 5%;
     align-items: center;
     padding-bottom: 15rem;
+    position: relative;
     &__form {
         flex-direction: column;
         position: relative;
@@ -59,7 +58,6 @@
         &-item {
             transition: all .3s ease;
             border-bottom: 4px solid transparent;
-            border-radius: 1rem;
             padding: .5rem;
             &:not(:last-of-type) {
                 margin-right: 3rem;
